@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Joe Warner</title>
 </head>
 <body>
@@ -14,25 +15,35 @@
     </header>
 
     <!-- image of Joe -->
-        <img src="joe.jpg" alt="Picture of Joe" width="100px" height="100px">
-        
-    <!-- Content -->
-            <h4>About me</h4>
-
+    <div id="pic-container">
+        <img id="joe-pic" src="joe.jpg" alt="Picture of Joe" width="100px" height="100px">
+    </div>
+    <!-- nav -->
+        <div id='nav-bar'>
+            <a class='list-title' href="about-me.html"><h4>About Me</h4></a> <h4>Another Page</h4> <h4>Another Page</h4> <h4>Another Page</h4>
+        </div>
+            <hr>
+    <!-- likes list -->
+        <div id='about-me'>
             <p>Likes</p>
-                <ul>
-                    <li><a href="https://www.dogstrust.org.uk/">Dogs</a></li>
-                    <li><a href="https://www.bbc.co.uk/sport/football">Football</a></li>
-                    <li><a href="https://www.lakedistrict.gov.uk/visiting/plan-your-visit">Walking</a></li>
-                    <li><a href="https://www.playstation.com/en-gb/explore/ps4/buy-ps4/">PS4</a></li>
-                    <li><a href="https://www.manchestercodes.com/">Coding</a></li>
+                <ul id='about-me-list'>
+                    <li><a class='list-title' href="https://www.dogstrust.org.uk/">Dogs</a></li>
+                        <img class='image-lot' src="dogs.jpg">
+                    <li><a class='list-title' href="https://www.bbc.co.uk/sport/football">Football</a></li>
+                        <img class='image-lot' src='football.jpg'>
+                    <li><a class='list-title' href="https://www.lakedistrict.gov.uk/visiting/plan-your-visit">Walking</a></li>
+                        <img class='image-lot' src='walking.jpg'>
+                    <li><a class='list-title' href="https://www.playstation.com/en-gb/explore/ps4/buy-ps4/">PS4</a></li>
+                        <img class='image-lot' src='playstation.jpg'>
+                    <li><a class='list-title' href="https://www.manchestercodes.com/">Coding</a></li>
+                        <img class='image-lot' src='coding.jpg' href='https://www.manchestercodes.com/>'>
                 </ul>
-            
-    <!-- youtube button -->
+        </div>   
+    <!-- youtube button + icon-->
+            <div id='youtube'>
                 <img src="youtube.png" alt="youtube logo icon" width= "25px" height="25px">
-    <!-- youtube icon -->
-                <button><a href="https://www.youtube.com/">YouTube</a></button>
-                
+                <button><a class='button1' href="https://www.youtube.com/">YouTube</a></button>
+            </div>    
 
         </div>
 
