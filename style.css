@@ -1,8 +1,12 @@
 body{
-     background-image: linear-gradient(orange, black);
+     background-image: url('background.jpg');
      height: auto;
      width: auto;
      margin-bottom: 200px;
+}
+
+#wrapper{
+    background-color: #FEFEDF; 
 }
 
 header{
@@ -32,8 +36,6 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
-
 }
 
 .button1 {
@@ -62,8 +64,9 @@ header{
 }
 
 
-/* #nav-about-me {
-    display: flex;
+#logo1{
     align-self: center;
-    justify-content: left;
-} */
+    width: 230px;
+    height: 200px;
+}
+
