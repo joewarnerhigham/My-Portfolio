@@ -1,67 +1,80 @@
 body{
      background-image: url('background.jpg');
-     height: auto;
-     width: auto;
-     margin-bottom: 200px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+
 }
 
-#wrapper{
-    background-color: #FEFEDF; 
-}
 
 header{
     background-color: rgba(30, 25, 68, 0.6);
-    color: orange;
+    color: #FFC75F;
+    width: 100%;
     text-align: center;
+    justify-content: center;
+    border: solid white 2px;
+
 }
+
 
 #pic-container {
     display: flex;
     justify-content: center;
-    padding: 40px;
-}
-
-#about-me {
-    color: white;
-    align-self: center;
-    justify-content: center;
-}
-
-.list-title {
-    color: white;
-}
-
-#about-me-list {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.button1 {
-    color: black;
-}
- 
-#youtube {
-    display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    padding: 1%;
+   }
+
+#joe-pic:hover {
+    transform: scale(1.5);
+    padding: 5%;
 }
 
-.image-lot {
-    width:300px;
-    height: 200px;
-    padding: 50px;
-}
 
 #nav-bar {
-    background-color: grey;
+    background-color: rgba(30, 25, 68, 0.6);
     display: flex;
     flex-direction: row;
-    color: black;
+    color: #FFC75F;
     justify-content: space-around;
+    width: 100%;
+    border: solid white 2px;
 }
+list-title:visited, .list-title{
+    color:  #FFC75F;
+    text-decoration: none;
+}
+
+.list-title:hover {
+    color:  #FFC75F;
+    transform: scale(1.5);
+    text-decoration: none;
+}
+
+#wrapper{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    background:
+        linear-gradient(#0089BA,#FF9671),
+        url('logo.png') bottom right no-repeat;
+    flex-wrap: wrap;
+    border: solid white 2px;
+    }
+
+    #wrapper img {
+        flex-direction: row;
+        width: 30%;
+        border: solid white 2px;
+        
+        
+        
+    }
+
+
+
+
 
 
 
