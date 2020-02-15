@@ -6,7 +6,6 @@ body{
 
 }
 
-
 header{
     background-color: rgba(30, 25, 68, 0.6);
     color: #FFC75F;
@@ -17,17 +16,16 @@ header{
 
 }
 
-
 #pic-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 1%;
    }
 
 #joe-pic:hover {
     transform: scale(1.5);
-    padding: 5%;
+    padding: 2%;
 }
 
 
@@ -39,7 +37,9 @@ header{
     justify-content: space-around;
     width: 100%;
     border: solid white 2px;
+    margin-top: 30px;
 }
+
 list-title:visited, .list-title{
     color:  #FFC75F;
     text-decoration: none;
@@ -51,30 +51,130 @@ list-title:visited, .list-title{
     text-decoration: none;
 }
 
+#about-me{
+    display: flex;
+    align-content: start;
+    justify-content: center;
+    margin-top: -2%;
+
+}
+
 #wrapper{
     display: flex;
-    align-content: center;
-    justify-content: center;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
     padding: 20px;
     background:
-        linear-gradient(#0089BA,#FF9671),
-        url('logo.png') bottom right no-repeat;
+        linear-gradient(orange, indigo);
     flex-wrap: wrap;
-    border: solid white 2px;
+    margin: 2% 10%
     }
 
-    #wrapper img {
+    .section{
+        margin: 30px;
+        background-color: rgba(30, 25, 68, 0.24);
+        display: flex;
         flex-direction: row;
-        width: 30%;
-        border: solid white 2px;
-        
-        
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+
+    .section img {
+        width: 300px;   
+    }
+    
+    /* Dogs */
+
+    #dogs-section:hover{
+            color: orange;
+        }
+     
+    #dogs-section img{
+        padding: 20px;
+        justify-self: start;
+    }
+
+    #dogs-section h1{
+        align-self: start;
+        height: fit-content;
+        justify-self: start;
+        padding: 10px;
+    }
+
+    #dogs-para{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+
+/* Coding */
+
+        #coding-section:hover{
+            color: orange;
+        }
+     
+    #coding-section img{
+        padding: 20px;
+        border: none;
+        justify-self: start;
+    }
+
+    #coding-section h1{
+        align-self: start;
+        height: fit-content;
+        justify-self: start;
+        padding: 10px;
+    }
+
+    #coding-para{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+
+/* Walking */
+
+    #walking-section:hover{
+        color: orange;
+    }
+ 
+#walking-section img{
+    padding: 20px;
+    border: none;
+    justify-self: start;
+}
+
+#walking-section h1{
+    align-self: start;
+    height: fit-content;
+    justify-self: start;
+    padding: 10px;
+}
+
+    #walking-para{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+
+    footer{
+        background-color: rgba(30, 25, 68, 0.164);
+        color: white;
+        width: 100%;
+        text-align: center;
         
     }
 
 
-
-
-
-
-
+    @media only screen and (max-width: 600px) {
+        .section{
+          flex-direction: column;
+        }
+    
+    @media only screen and (max-width: 600px) {
+        .section img{
+            width: 100%;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+    }
