@@ -4,78 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Joe Warner</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Joe Warner</h1>
-        <h2>Portfolio</h2>
-    </header>
-
-
-
-    <!-- image of Joe -->
-    <div id="pic-container">
-        <img id="joe-pic" src="joe.jpg" alt="Picture of Joe" width="100px" height="100px">
+    <!-- nav container -->
+    <div id="header">
+        <a href="index.html"?>
+            <div id="home-nav" class=header-box> 
+                <h1>HOME</h1>
+            </div>
+        </a>
+        <a href="about-me.html">
+        <div id="about-nav" class=header-box>
+            <h1>ABOUT ME</h1> 
+        </div>
+        </a>
+        <a href="contact.html">
+        <div id="contact-nav" class=header-box>
+            <h1>CONTACT ME</h1>
+        </div>
+        </a>
     </div>
 
 
-
-
-    <!-- nav -->
-        <div id='nav-bar'>
-            <a class='list-title' href="about-me.html"><h4>About Me</h4></a><h4>Another Page</h4> <h4 class='enlarge-h4'>Another Page</h4> <h4 class='enlarge-h4'>Another Page</h4>
+    <!-- wrapper -->
+    <div id='wrapper'>
+        <div id='title-box'>
+            <span>About Me</span>
+            <img src="joe.jpg" alt="picture of joe"> 
+            <ul> 
+                <li>name: Joe Warner</li>
+                <li>age: 25</li>
+                <li>from: Preston</li>
+            </ul>
+        </div> 
+       
+        <div class='section-box' id='hobbies'>
+            <h1 id="hobby-h1">Hobbies</h1>
+            <div id="hobbies_reveal">
+                <p> I enjoy art and photography, something I don't do too much of but is always fun when there's time. 
+                <br><br> Going for walks with the dog is something I like
+                    doing, it's fun and with good company, is a good way to spend any day. 
+                <br><br>
+                 Coding is another hobby, relatively new, lots of fun.
+                <br><br>I have always liked gaming.
+                <br><br>click for more...
+                </p>
+            </div>
+        </div>
+        <div class='section-box' id='projects'>
+            projects
         </div>
 
-            <hr>
 
-<div id="about-me">
-    <img src="about-me.png" alt="about me">
-</div>
-<div id='wrapper'>
-
-    <div id="dogs-section" class='section'>
-        <h1>DOGS!</h1>
-        <img src="dogs.jpg" alt="dog picture">
-        <p id='dogs-para'>I have a dog called Vinnie, pictured, he is a good boy and I love all dogs.</p>
-
-    </div>
-
-    <div id="coding-section" class='section'>
-        <h1>CODING!</h1>
-        <img src="coding.jpg" alt="coding picture">
-        <p id="coding-para">I love to code in my spare time. It is fun and relaxing. Try it.</p>
-
-    </div>
-
-    <div id="walking-section" class='section'>
-        <h1>WALKING!</h1>
-        <img src="walking.jpg" alt="walking picture">
-        <p id='walking-para'>I like to go walking, with my dog and girlfriend, it's a good way to spend a nice day.</p>
-    </div>
-
-    <!-- input -->
-    <div id="input1">
-        <input type="type">
-    </div>
-    <!-- form -->
-    <div>
-    <form action="/my-handling-form-page" method='post'></form>
-        <ul>
-            <li>
-                <label for="name">Name:</label>
-            </li>
-            <li>
-                <label for="mail">Mail:</label>
-            </li>
-            <li>
-                <label for="message">Message:</label>
-            </li>
-        </ul>
-    </form>
-    </div>
     
-<footer>Footer</footer>  
+    </div>
+    <footer> <p>Joe Warner Portfolio</p></footer>  
+
+    <script src="script.js">   </script>
 </body>
+
 </html>
